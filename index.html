@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro Bastos — Desenvolvedor Full Stack</title>
+  <meta name="description" content="Pedro Bastos, desenvolvedor full stack com Node.js, NestJS e React. Disponível para vagas CLT e projetos freelance.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Principal">
+      <a href="#inicio" class="logo">pedrobastos<span class="accent">.dev</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#stack" class="nav-link">Stack</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="btn-pill">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section id="inicio" class="hero container">
+      <div class="hero-text">
+        <p class="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Disponível para CLT e freelance
+        </p>
+        <h1 class="hero-title">
+          Pedro Bastos.<br>
+          <span class="muted-title">Desenvolvo sistemas web do back ao front.</span>
+        </h1>
+        <p class="hero-lead">Desenvolvedor full stack com Node.js, NestJS e React. Ajudo empresas a entregar produto e negócios locais a vender mais pela internet.</p>
+        <div class="btn-row">
+          <a href="#projetos" class="btn btn-primary">
+            Ver projetos
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#contato" class="btn btn-outline">Pedir orçamento</a>
+          <a href="assets/CV_Pedro_Bastos_Fullstack.pdf" class="btn btn-outline" target="_blank" rel="noopener">Ver currículo (PDF)</a>
+        </div>
+        <p class="hero-meta">Praia Grande, SP · remoto ou híbrido</p>
+      </div>
+
+      <div class="code-card" aria-label="Resumo da stack em formato de código">
+        <div class="code-card-bar">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="code-file">stack.ts</span>
+        </div>
+<pre class="code"><span class="c-comment">// o que eu uso no dia a dia</span>
+<span class="c-key">export const</span> pedro = {
+  backend:  [<span class="c-str">'Node.js'</span>, <span class="c-str">'NestJS'</span>],
+  frontend: [<span class="c-str">'React'</span>, <span class="c-str">'TypeScript'</span>],
+  banco:    [<span class="c-str">'PostgreSQL'</span>],
+  aberto:   [<span class="c-str">'CLT'</span>, <span class="c-str">'Freelance'</span>],
+};</pre>
+      </div>
+    </section>
+
+    <!-- DOIS PÚBLICOS -->
+    <section class="container section-tight" aria-labelledby="trabalhar">
+      <h2 id="trabalhar" class="section-title">Dois jeitos de trabalhar comigo</h2>
+      <div class="grid-2">
+
+        <article class="card track reveal">
+          <p class="eyebrow">01 — Para empresas</p>
+          <h3 class="card-title">Vaga CLT júnior, full stack ou back-end</h3>
+          <ul class="track-list">
+            <li>3+ anos de experiência profissional em desenvolvimento</li>
+            <li>Experiência corporativa com SAP ABAP na Accenture Brasil</li>
+            <li>Cursando Desenvolvimento de Software Multiplataforma na FATEC</li>
+          </ul>
+          <div class="btn-row track-actions">
+            <a href="assets/CV_Pedro_Bastos_Fullstack.pdf" class="btn btn-light btn-sm" target="_blank" rel="noopener">Ver currículo (PDF)</a>
+            <a href="https://linkedin.com/in/pedrobastosdev" class="btn btn-outline btn-sm" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </article>
+
+        <article class="card track reveal">
+          <p class="eyebrow">02 — Para o seu negócio</p>
+          <h3 class="card-title">Sites e sistemas sob medida, como freelancer</h3>
+          <ul class="track-list">
+            <li>Landing pages e sites para aparecer no Google</li>
+            <li>Cardápios digitais e vitrines com pedido pelo WhatsApp</li>
+            <li>Sistemas internos: estoque, agendamento, painel administrativo</li>
+          </ul>
+          <div class="btn-row track-actions">
+            <a href="https://wa.me/5513982298297?text=Ol%C3%A1%2C%20Pedro!%20Vim%20pelo%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." class="btn btn-primary btn-sm" target="_blank" rel="noopener">Pedir orçamento</a>
+            <a href="#processo" class="btn btn-outline btn-sm">Como funciona</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Projetos fixados</p>
+            <h2 id="projetos-titulo" class="section-title">O que eu já construí</h2>
+          </div>
+          <a href="https://github.com/pedrobastosdev" class="link-muted" target="_blank" rel="noopener">
+            Todos os repositórios no GitHub
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+
+        <div class="grid-3">
+
+          <!-- PROJETO 1 — Cardápio Digital -->
+          <article class="card project reveal">
+            <a class="project-thumb" href="https://cardapio-acai.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="img/cardapio-acai.webp" alt="" width="1280" height="800" loading="lazy">
+            </a>
+            <div class="project-body">
+              <p class="project-kind">Pedidos online · full stack</p>
+              <h3 class="card-title">Cardápio Digital — Açaí da Orla</h3>
+              <p class="project-desc">O cliente monta o açaí pelo celular e envia o pedido pelo WhatsApp; o dono acompanha tudo num painel que atualiza sozinho. O servidor recalcula o total com Decimal e controla cada pedido por uma máquina de estados.</p>
+              <ul class="tags" aria-label="Tecnologias">
+                <li>NestJS</li>
+                <li>React</li>
+                <li>Prisma</li>
+                <li>PostgreSQL</li>
+                <li>Vitest</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://cardapio-acai.vercel.app" class="link-accent" target="_blank" rel="noopener">Ver online ↗</a>
+                <a href="https://github.com/pedrobastosdev/cardapio-acai" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 2 — Helpdesk com SLA -->
+          <article class="card project reveal">
+            <a class="project-thumb" href="https://helpdesk-sla-wine.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="img/helpdesk-sla.webp" alt="" width="1280" height="800" loading="lazy">
+            </a>
+            <div class="project-body">
+              <p class="project-kind">Sistema interno · full stack</p>
+              <h3 class="card-title">Helpdesk com SLA</h3>
+              <p class="project-desc">Empresas abrem chamados, técnicos atendem e o sistema controla o prazo de cada um: pausa o relógio enquanto aguarda o cliente, marca estouros num job agendado e avisa por e-mail através de uma fila.</p>
+              <ul class="tags" aria-label="Tecnologias">
+                <li>NestJS</li>
+                <li>React</li>
+                <li>BullMQ + Redis</li>
+                <li>PostgreSQL</li>
+                <li>Jest</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://helpdesk-sla-wine.vercel.app" class="link-accent" target="_blank" rel="noopener">Ver online ↗</a>
+                <a href="https://github.com/pedrobastosdev/helpdesk-sla" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJETO 3 — Vitrine -->
+          <article class="card project reveal">
+            <a class="project-thumb" href="https://vitrine-imobiliaria.vercel.app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+              <img src="img/vitrine-template.webp" alt="" width="1280" height="800" loading="lazy">
+            </a>
+            <div class="project-body">
+              <p class="project-kind">Site + painel · pequenos negócios</p>
+              <h3 class="card-title">Vitrine: site + painel</h3>
+              <p class="project-desc">Template para colocar no ar o site de um pequeno negócio: o dono edita imóveis, serviços ou produtos num painel e o site atualiza na hora. O mesmo código roda duas demos, com nota 100 em SEO e acessibilidade no Lighthouse.</p>
+              <ul class="tags" aria-label="Tecnologias">
+                <li>NestJS</li>
+                <li>Next.js</li>
+                <li>Tailwind</li>
+                <li>Cloudinary</li>
+                <li>Vitest</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://vitrine-imobiliaria.vercel.app" class="link-accent" target="_blank" rel="noopener" aria-label="Ver demo da imobiliária">Imobiliária ↗</a>
+                <a href="https://vitrine-guincho-psi.vercel.app" class="link-accent" target="_blank" rel="noopener" aria-label="Ver demo do guincho">Guincho ↗</a>
+                <a href="https://github.com/pedrobastosdev/vitrine-template" target="_blank" rel="noopener">Código</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section" aria-labelledby="stack-titulo">
+      <div class="container split">
+        <div class="split-side">
+          <p class="eyebrow">Stack</p>
+          <h2 id="stack-titulo" class="section-title">Ferramentas que uso para entregar</h2>
+        </div>
+        <div class="split-main">
+          <div class="stack-group">
+            <h3 class="label">Principal</h3>
+            <ul class="stack-grid">
+              <li><strong>Node.js</strong><span>Back-end</span></li>
+              <li><strong>NestJS</strong><span>APIs REST</span></li>
+              <li><strong>React</strong><span>Front-end</span></li>
+              <li><strong>TypeScript</strong><span>Linguagem</span></li>
+              <li><strong>PostgreSQL</strong><span>Banco de dados</span></li>
+              <li><strong>Git</strong><span>Versionamento</span></li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="label">Também já trabalhei com</h3>
+            <p class="text-muted">Java · Spring Boot · PHP · SAP ABAP</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section" aria-labelledby="sobre-titulo">
+      <div class="container about">
+        <div class="about-photo">
+          <img src="img/pedro.webp" alt="Foto de Pedro Bastos" width="445" height="667" loading="lazy">
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">Sobre</p>
+          <h2 id="sobre-titulo" class="section-title">Do SAP à web</h2>
+          <p>Comecei no mundo corporativo com SAP ABAP na Accenture Brasil e hoje me dedico a aplicações web com Node.js, NestJS e React.</p>
+          <p>Moro em Praia Grande, SP, e curso Desenvolvimento de Software Multiplataforma na FATEC. [Uma frase sobre o tipo de problema que você gosta de resolver.]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section id="processo" class="section" aria-labelledby="processo-titulo">
+      <div class="container">
+        <p class="eyebrow">Para clientes freelance</p>
+        <h2 id="processo-titulo" class="section-title section-title-space">Como funciona</h2>
+        <ol class="steps">
+          <li class="step is-first reveal">
+            <span class="step-num">01</span>
+            <strong>Conversa</strong>
+            <span>Você me conta o que precisa e eu entendo o seu negócio.</span>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">02</span>
+            <strong>Proposta</strong>
+            <span>Escopo, prazo e valor por escrito, sem surpresa no final.</span>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">03</span>
+            <strong>Desenvolvimento</strong>
+            <span>Você acompanha versões de teste e pede ajustes.</span>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">04</span>
+            <strong>Entrega</strong>
+            <span>Site no ar, com domínio configurado e suporte inicial.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section" aria-labelledby="contato-titulo">
+      <div class="container contact">
+        <div class="contact-info">
+          <h2 id="contato-titulo" class="contact-title">Vamos conversar<span class="accent">?</span></h2>
+          <p class="text-muted contact-lead">Seja uma vaga na sua empresa ou um projeto para o seu negócio, respondo em até 1 dia útil.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:pedro.bastos.dev@proton.me"><span>E-mail</span><span>pedro.bastos.dev@proton.me</span></a></li>
+            <li><a href="https://wa.me/5513982298297" target="_blank" rel="noopener"><span>WhatsApp</span><span>(13) 98229-8297</span></a></li>
+            <li><a href="https://linkedin.com/in/pedrobastosdev" target="_blank" rel="noopener"><span>LinkedIn</span><span>/in/pedrobastosdev</span></a></li>
+            <li><a href="https://github.com/pedrobastosdev" target="_blank" rel="noopener"><span>GitHub</span><span>pedrobastosdev</span></a></li>
+            <li><a href="https://instagram.com/pedrobastos.dev" target="_blank" rel="noopener"><span>Instagram</span><span>@pedrobastos.dev</span></a></li>
+            <li><a href="assets/CV_Pedro_Bastos_Fullstack.pdf" target="_blank" rel="noopener"><span>Currículo</span><span>PDF ↗</span></a></li>
+          </ul>
+        </div>
+
+        <form class="card contact-form" id="contact-form" novalidate>
+          <fieldset class="radio-group">
+            <legend>Você é</legend>
+            <div class="radio-row">
+              <label class="radio-pill">
+                <input type="radio" name="perfil" value="empresa" checked>
+                Recrutador / empresa
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="perfil" value="cliente">
+                Dono de negócio
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="field">
+            Nome
+            <input type="text" name="nome" autocomplete="name" required>
+          </label>
+          <label class="field">
+            E-mail ou WhatsApp
+            <input type="text" name="contato" autocomplete="email" required>
+          </label>
+          <label class="field">
+            Mensagem
+            <textarea name="mensagem" rows="4" required></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Pedro Bastos</span>
+      <span class="mono">Feito com HTML, CSS e JS · hospedado no GitHub Pages</span>
+    </div>
+  </footer>
+
+</body>
+</html>
