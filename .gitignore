@@ -1,0 +1,5 @@
+# Capturas e arquivos temporários das ferramentas de design
+.playwright-mcp/
+.impeccable/review/
+.impeccable/live/
+.impeccable/hook.cache.json

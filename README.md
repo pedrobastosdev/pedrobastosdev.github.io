@@ -2,12 +2,14 @@
 
 > **Site:** [pedrobastosdev.github.io](https://pedrobastosdev.github.io) · **Currículo:** [PDF](assets/CV_Pedro_Bastos_Fullstack.pdf)
 
-Meu site pessoal de desenvolvedor full stack (Node.js, NestJS e React). Ele fala com dois públicos ao mesmo tempo: **empresas** que procuram um dev para vaga CLT e **donos de negócio** que precisam de um site ou sistema como freelance.
+Meu site pessoal de desenvolvedor full stack (Node.js, NestJS e React). Ele fala com dois públicos com o mesmo peso: **empresas** que procuram um dev para vaga CLT ou PJ, e **donos de negócio** que precisam de um site ou sistema como freelance.
+
+O visual imita uma página de **classificados de jornal**: papel cinza, tinta preta, um anúncio de destaque amarelo, foto em retícula e tipografia condensada em caixa alta (Archivo).
 
 Feito em HTML, CSS e JavaScript puros, sem framework, sem build e sem dependências.
 
 <p align="center">
-  <img src="docs/hero.webp" alt="Topo do site com nome, chamada, botões de projetos, orçamento e currículo, e um card de código com a stack" width="720">
+  <img src="docs/hero.webp" alt="Topo do site: anúncio amarelo com foto em retícula, nome, disponibilidade para CLT, PJ e freelance, telefone, botão Falar comigo e link do currículo" width="720">
   &nbsp;
   <img src="docs/mobile.webp" alt="Topo do site no celular" width="170">
 </p>
@@ -16,38 +18,42 @@ Feito em HTML, CSS e JavaScript puros, sem framework, sem build e sem dependênc
 
 | Seção | O que mostra |
 |---|---|
-| **Início** | Nome, proposta de valor e três atalhos: ver projetos, pedir orçamento e ver o currículo |
-| **Dois jeitos de trabalhar comigo** | Um card para empresas (CLT) e outro para negócios (freelance), cada um com sua chamada |
-| **Projetos fixados** | [Cardápio Digital](https://github.com/pedrobastosdev/cardapio-acai), [Helpdesk com SLA](https://github.com/pedrobastosdev/helpdesk-sla) e [Vitrine](https://github.com/pedrobastosdev/vitrine-template), com link para o site e para o código |
-| **Stack** | Ferramentas principais e as que já usei |
-| **Sobre** | Foto e trajetória |
-| **Como funciona** | O processo de um projeto freelance em 4 passos |
-| **Contato** | E-mail, WhatsApp, redes, currículo e um formulário |
+| **Apresentação** | Nome, foto, disponibilidade (CLT, PJ e freelance), telefone, botão "Falar comigo" e currículo |
+| **Empregos · Stack · Serviços** | Três anúncios lado a lado: a vaga que procuro (com currículo e LinkedIn), a stack do dia a dia e os serviços para negócios (com orçamento pelo WhatsApp) |
+| **Projetos** | [Cardápio Digital](https://github.com/pedrobastosdev/cardapio-acai), [Helpdesk com SLA](https://github.com/pedrobastosdev/helpdesk-sla) e [Vitrine](https://github.com/pedrobastosdev/vitrine-template), cada um com o que faz, o que tem por dentro, a stack e os links |
+| **Sobre** | "Do SAP à web": a trajetória da Accenture (SAP ABAP) até a web, e a FATEC |
+| **Como funciona** | O processo freelance em 4 passos e as formas de contratação (PJ mensal ou por demanda, freelance por projeto) |
+| **Contato** | Formulário e os contatos diretos para empresas e para negócios |
 
-![Seção de projetos com os três cards](docs/projetos.webp)
+![Seção de projetos com os três anúncios](docs/projetos.webp)
 
 ## Detalhes
 
-- **Formulário sem back-end:** valida os campos e abre o WhatsApp com a mensagem pronta, incluindo se quem escreveu é recrutador ou dono de negócio. Sem WhatsApp configurado, abre o e-mail.
-- **Responsivo:** menu hambúrguer no celular, que fecha com `Esc` ou ao clicar num link.
-- **Menu ativo:** o link da seção que está na tela fica destacado (`IntersectionObserver`).
-- **Animações leves** ao rolar, desligadas para quem prefere menos movimento (`prefers-reduced-motion`).
-- **Acessibilidade:** HTML semântico, link "pular para o conteúdo", foco visível, alvos de toque de 44 px e textos com contraste AA.
-- **Leve:** imagens em WebP com `loading="lazy"` e tamanho declarado; nenhuma biblioteca JavaScript.
+- **Formulário sem back-end:** valida cada campo com mensagem própria. Quem é empresa envia por e-mail e quem é dono de negócio envia pelo WhatsApp, os dois com a mensagem pronta. Se o app não abrir, aparece o outro caminho, e o texto digitado nunca se perde.
+- **Perfil já marcado:** quem chega ao contato pelos links de Empregos ou de Serviços encontra o formulário com o perfil escolhido, e ao lado fica só o contato daquele público.
+- **Menu:** todos os itens com a mesma altura. Em telas menores vira o botão "Menu", que fecha com `Esc`, ao tocar num item ou ao tocar fora.
+- **Seção ativa:** o item do menu da seção que está na tela fica marcado.
+- **Movimento:** só a entrada do anúncio de destaque, desligada para quem prefere menos movimento (`prefers-reduced-motion`).
+- **Acessibilidade:** HTML semântico, link "pular para o conteúdo", foco visível, alvos de toque de 44 px e contraste AA em todos os textos.
+- **Leve:** fonte e imagens hospedadas no próprio site, imagens em WebP com `loading="lazy"` e tamanho declarado, nenhuma biblioteca JavaScript.
 
 ## Estrutura
 
 ```
 .
 ├── index.html
+├── favicon.svg
 ├── css/
-│   └── style.css      # cores e fontes em variáveis no :root
+│   └── style.css      # cores, tipografia e medidas em variáveis no :root
 ├── js/
-│   └── script.js      # menu, seção ativa, animações e formulário
-├── img/               # foto e capturas dos projetos
+│   └── script.js      # menu, seção ativa, perfil do contato e formulário
+├── fonts/             # Archivo (woff2)
+├── img/               # foto, capturas dos projetos e imagem de compartilhamento (og.png)
 ├── assets/
 │   └── CV_Pedro_Bastos_Fullstack.pdf
-└── docs/              # imagens deste README
+├── docs/              # imagens deste README
+├── PRODUCT.md         # público, objetivo e regras de conteúdo
+└── DESIGN.md          # sistema visual (cores, tipografia, componentes)
 ```
 
 ## Rodar localmente
@@ -66,9 +72,10 @@ python3 -m http.server 8000
 
 | O quê | Onde |
 |---|---|
-| Cor de destaque | `--accent` no topo do `css/style.css` (opções testadas: `#FF8A3D`, `#7CE3B1`, `#8AB4FF`, `#F2C14E`) |
+| Cores, fontes e espaçamentos | variáveis no `:root` do `css/style.css` (`--paper`, `--ink`, `--yellow`…) |
 | WhatsApp e e-mail do formulário | objeto `CONFIG` no topo do `js/script.js` |
-| Projetos | blocos `<article class="card project">` no `index.html`; a imagem vai em `img/` em 16:10 |
+| Textos do Sobre, dos passos e das formas de contratação | `index.html`, nos trechos marcados com `<!-- ✎ Texto editável -->` |
+| Projetos | blocos `<article class="ad project">` no `index.html`; a imagem vai em `img/` em 16:10 |
 | Currículo | substitua o arquivo em `assets/` mantendo o nome |
 
 ## Deploy

@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-12T14:51:30.608Z",
+        "reason": "model verified in browser: every .ad renders 36-45px padding from clamp(); .page borders are hairline rules between full-width bands, not boxes"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-12T14:51:30.618Z",
+        "reason": "model verified in browser: no text element renders line-height between 1.2x and 1.3x; static scan cannot resolve the CSS"
+      }
+    ]
+  }
+}

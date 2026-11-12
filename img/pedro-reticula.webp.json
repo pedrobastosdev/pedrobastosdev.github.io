@@ -1,0 +1,4 @@
+{
+  "prompt": "origin: derived from img/pedro.webp with ImageMagick: -colorspace Gray -resize 640x -level 8%,82%,1.25 -sigmoidal-contrast 5x45% -ordered-dither h8x8o, black dots on transparent alpha",
+  "createdAt": "2026-11-12T14:51:44.460Z"
+}
